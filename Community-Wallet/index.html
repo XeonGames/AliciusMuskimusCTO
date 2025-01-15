@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM Community Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ACM Community Wallet</h1>
+        <p>Solana Wallet Address: <span id="wallet-address">4mJwXjFeMWFrXvArhBGKqud5nqzHkLwaGxpVKeBJRupk</span></p>
+    </header>
+
+    <main>
+		<section>
+		<style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/solana/6TxnF5XEs4mUe58gfbDHAfLEQRZBVVRBdBLMoDcK1wnX?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=1"></iframe></div>
+		</section>
+        <section id="balance-section">
+            <h2>Wallet Balance</h2>
+            <p id="wallet-balance">Loading...</p>
+        </section>
+
+        <section id="transactions-section">
+            <h2>Recent Transactions</h2>
+            <ul id="transactions-list">
+                <li>Loading...</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Solana Web3.js -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
